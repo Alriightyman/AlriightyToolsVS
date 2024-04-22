@@ -2,8 +2,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="xxxxxxxxxxxx" Version="1.0" Language="en-US" Publisher="Alriighty Games" />
-        <DisplayName>AlriightyTools</DisplayName>
-        <Description xml:space="preserve">Visual Studio integration with the Alriighty editor, including C# script debugging support</Description>
+        <DisplayName>Alriighty Engine Tools</DisplayName>
+        <Description xml:space="preserve">Visual Studio integration with the Alriighty Editor, including C# script debugging support</Description>
         <License>LICENSE.txt</License>
         <Icon>icon.png</Icon>
     </Metadata>

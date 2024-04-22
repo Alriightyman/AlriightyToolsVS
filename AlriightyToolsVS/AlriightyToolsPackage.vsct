@@ -11,38 +11,44 @@
     <Commands package="guidAlriightyToolsPackage">
         <Groups>
             <Group guid="guidAlriightyToolsPackageCmdSet" id="MyMenuGroup" priority="0x0600">
-                <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_STANDARD" />
+                <Parent guid="guidVSDebugGroup" id="IDM_DEBUG_MENU" />
             </Group>
         </Groups>
 
         <Buttons>
-            <Button guid="guidAlriightyToolsPackageCmdSet" id="AttachAlriightyCommandId" priority="0x0100" type="Button">
+            <Button guid="guidAlriightyToolsPackageCmdSet" id="AttachAlriightyEditorCommandId" priority="0x0100" type="Button">
                 <Parent guid="guidAlriightyToolsPackageCmdSet" id="MyMenuGroup" />
                 <Icon guid="ImageCatalogGuid" id="Play" />
                 <CommandFlag>DynamicVisibility</CommandFlag>
                 <CommandFlag>IconIsMoniker</CommandFlag>
                 <Strings>
-                    <ButtonText>Attach to Alriighty Editor</ButtonText>
+                    <ButtonText>Attach to AlriightyEditor</ButtonText>
                 </Strings>
             </Button>
         </Buttons>
     </Commands>
 
     <KeyBindings>
-        <KeyBinding guid="guidAlriightyToolsPackageCmdSet" id="AttachAlriightyCommandId" editor="guidVSStd97" key1="VK_F7" mod1="Control Shift" />
+        <KeyBinding guid="guidAlriightyToolsPackageCmdSet" id="AttachAlriightyEditorCommandId" editor="guidVSStd97" key1="VK_F7" mod1="Control Shift" />
     </KeyBindings>
     
     <VisibilityConstraints>
-        <VisibilityItem guid="guidAlriightyToolsPackageCmdSet" id="AttachAlriightyCommandId" context="guidUIContextHasCSProject" />
+        <VisibilityItem guid="guidAlriightyToolsPackageCmdSet" id="AttachAlriightyEditorCommandId" context="guidUIContextHasCSProject" />
     </VisibilityConstraints>
 
     <Symbols>
         <GuidSymbol name="guidAlriightyToolsPackage" value="{c7a2ebd8-63d8-4332-b696-67ca11f7f971}" />
         <GuidSymbol name="guidUIContextHasCSProject" value="{df4efbdd-f234-4d5c-a753-4b50e0837327}" />
 
+		<GuidSymbol name="guidAlriightyToolsPackageCmdSet" value="{4E50788E-B023-4F77-AFE9-797603876907}">
+			<IDSymbol name="DebugTargetMenuControllerGroup" value="0x1000" />
+			<!--<IDSymbol name="PlayInEditorId" value="0x8192" /> -->
+			<!--<IDSymbol name="LaunchId" value="0x8193" />-->
+			<IDSymbol name="AttachAlriightyCommandId" value="0x8194" />
+		</GuidSymbol>
         <GuidSymbol value="{7ccae1a8-81a9-4346-aaa2-8cad5e772749}" name="guidAlriightyToolsPackageCmdSet">
             <IDSymbol value="4128" name="MyMenuGroup" />
-            <IDSymbol value="256" name="AttachAlriightyCommandId" />
+            <IDSymbol value="256" name="AttachAlriightyEditorCommandId" />
         </GuidSymbol>
     </Symbols>
 </CommandTable>

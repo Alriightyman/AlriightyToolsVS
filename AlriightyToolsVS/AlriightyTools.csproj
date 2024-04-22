@@ -47,8 +47,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AlriightyFlavoredProject.cs" />
+    <Compile Include="AlriightyFlavoredProjectFactory.cs" />
     <Compile Include="AttachEditorCommand.cs" />
+    <Compile Include="Debugging\AlriightyDebuggableProjectCfg.cs" />
     <Compile Include="Debugging\AlriightyDebuggerSession.cs" />
+    <Compile Include="Debugging\AlriightyDebugTarget.cs" />
+    <Compile Include="Debugging\AlriightyDebugTargetSelection.cs" />
     <Compile Include="Debugging\AlriightyStartInfo.cs" />
     <Compile Include="AlriightySolutionEventsListener.cs" />
     <Compile Include="AlriightyToolsGeneralOptions.cs">
